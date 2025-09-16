@@ -40,4 +40,8 @@ document.addEventListener("keydown", (event) => {
         alert("Password is not the same!")
         }
     }
+    else{
+        return;
+    }
 });
+
