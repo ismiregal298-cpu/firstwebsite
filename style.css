@@ -1,6 +1,6 @@
 @font-face {
     font-family: Cocogoose-Darkmode-trial;
-    src: url(./Coolgoose/Cocogoose-Pro-Darkmode-trial.ttf) format("truetype");
+    src: url(./Cocogoose-Pro-Darkmode-trial.ttf) format("truetype");
 }
 
 
@@ -150,3 +150,4 @@ a.register:hover{
     border: 0;
 
 }
+
