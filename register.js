@@ -23,20 +23,21 @@ registerButton.addEventListener("click", () => {
     }
 });
 document.addEventListener("keydown", (event) => {
-    const email = emailField.value;
-    const password = passwordField.value;
-    const password2 = passwordFieldTwo.value
+    if (event.key === "Enter") {   
+        const email = emailField.value;
+        const password = passwordField.value;
+        const password2 = passwordFieldTwo.value;
 
-    if (password == password2) {
-
-        if (email && password && password2)  {
-            alert("✅ Regestrierung erfolgreich!\nWillkommen, " + email + "!");
-        } 
-        else {
-            alert("❌ Bitte Email und Passwort eingeben.");
+        if (password == password2) {
+            // Ganz einfache Prüfung (nur Beispiel!)
+            if (email && password) {
+                alert("✅ Login erfolgreich!\nWillkommen, " + email + "!");
+            } else {
+                alert("❌ Bitte Email und Passwort eingeben.");
+            }
         }
-    }
-    else {
+        else {
         alert("Password is not the same!")
+        }
     }
 });
